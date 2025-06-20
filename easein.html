@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+#parent{
+    border: 4px solid blue;
+    height: 400px;
+}
+
+.one{
+    height: 80px;
+    width: 80px;
+    transition: 3s;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+#parent:hover .one{
+    margin-left: 1402px;
+    border-radius: 50%;
+    transform:  rotate(25deg);
+    box-shadow: chartreuse;
+
+}
+
+
+
+
+
+#one{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    transition-timing-function: ease-in;
+}
+#two{
+    background-color:chartreuse;
+     height: 100px;
+    width: 100px;
+    transition-timing-function: ease-out;
+}
+#three{
+    background-color:pink;
+     height: 100px;
+      width: 100px;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#four{
+    background-color:skyblue;
+     height: 100px;
+    width: 100px;
+   transition-timing-function: ease-in-out;
+   
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+
+    <div id="parent">
+    <div id="one" class="one">bandar🐒</div>
+    <div id="two" class="one">pink cat🐈</div>
+    <div id="three" class="one">mouse</div>
+    <div id="four" class="one">banana</div>
+     
+
+    </div>
+    
+</body>
+</html>
